@@ -13,4 +13,5 @@ export interface InjectOptions {
   sentinelFuse?: string;
 }
 
-export function inject(filename: string, resourceName: string, resourceData: Buffer, options: InjectOptions): Promise<void>;
+export function inject(filename: string, resourceName: string, resourceData: Buffer, options?: InjectOptions): Promise<void>;
+
